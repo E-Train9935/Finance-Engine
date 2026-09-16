@@ -1,8 +1,15 @@
+node_modules/
+apps/web/node_modules/
+apps/web/dist/
+
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
+
 apps/api/.env
-apps/web/node_modules/
-apps/web/dist/
+.env
+.env.*
+!.env.example
+
 .DS_Store
