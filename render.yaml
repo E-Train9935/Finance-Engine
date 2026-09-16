@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: finengine
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: CACHE_TTL_SECONDS
+        value: 300
+      - key: TWELVE_DATA_REQUESTS_PER_MINUTE
+        value: 7
+      - key: SEC_USER_AGENT
+        sync: false
+      - key: TWELVE_DATA_API_KEY
+        sync: false

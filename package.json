@@ -1,0 +1,15 @@
+{
+  "name": "finengine",
+  "private": true,
+  "version": "2.0.0",
+  "workspaces": ["apps/web"],
+  "scripts": {
+    "dev:web": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web",
+    "typecheck": "npm run typecheck -w apps/web",
+    "test:api": "python -m pytest -q tests/test_analytics.py"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
